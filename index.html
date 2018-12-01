@@ -747,7 +747,9 @@ label {
 .tabs {
 	display: inline-block;
 	text-align: center;
-	color: #fff
+    color: #fff;
+    max-width: 327px;
+    width: 100%;
 }
 
 .tabs h3 {
@@ -816,7 +818,7 @@ footer {
 .greens_img {
 	border-right: 1px solid #fff;
 	display: inline-block;
-	padding: 0 40px
+    padding: 0 40px;
 }
 
 .pdng1 {
@@ -869,11 +871,16 @@ footer {
 
 @media screen and (max-width:900px) {
 	.greens_img {
-		border-right: none
+        border-right: none;
+        max-width: 100%;
 	}
 	.euroKids_advantages_img img {
 		width: initial
-	}
+    }
+    
+    .euroKids_advantages {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:440px) {
@@ -900,8 +907,10 @@ footer {
 
 @media screen and (max-width:900px) {
 	.frm {
-		position: relative;
-		margin-top: 10px
+        margin-top: 10px;
+        position: static;
+        width: 100%;
+        max-width: 100%;
 	}
 	.hdr {
 		height: 144px
@@ -1021,6 +1030,28 @@ footer {
     line-height: 20px;
 }
 
+.col-md-4.tabs:first-child { margin-right: 15px; }
+
+@media (max-width: 767px) {
+    .container.second_paragraph p { padding: 0;}
+    .tabs {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .col-md-4.tabs ul { padding-left: 15px; }
+    .col-md-4.tabs:first-child { margin-right: 0; }
+
+    .euroKids_program .col-md-3 { width: 100%; height: 100px; }
+
+    .euroKids_advantages .col-md-4 { width: 100%; }
+
+    .greens_img { width: 100%; margin-bottom: 20px; }
+    
+    .row.awards_accolades { padding-top: 15px;}
+}
+
 @media (min-width: 992px) {
     .col-md-4 {
         width: 33.33333333%;
@@ -1046,6 +1077,11 @@ footer {
     font-size: 13.333px;
     line-height: normal;s
 }
+
+.hdr-img{
+    max-width: 820px;
+    width: 100%;
+} 
     </style>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   </head>
@@ -1055,7 +1091,7 @@ footer {
         <div class="home_icon">
             <a href="http://www.eurokidsindia.com/" target="_blank"><amp-img src="https://www.eurokidsindia.com/b2c/images/home_icon.png" width="20" height="20" alt=""></amp-img></a>
         </div>
-        <div class="col-md-12 hdr-img" style="padding:0px; position: inherit;"><amp-img src="https://www.eurokidsindia.com/b2c/images/header_bg.gif" alt="" width="820" height="366"></amp-img></div>
+        <div class="col-md-12 hdr-img"><amp-img src="https://www.eurokidsindia.com/b2c/images/header_bg.gif" alt="" width=820 height=366 layout='responsive'></amp-img></div>
     </div>
     <div class="container rbdy1">
         <div class="col-md-8 pdng">
@@ -1155,7 +1191,7 @@ footer {
     <div class="container bg2">
         <div class="row awards_accolades">
             <div class="col-md-4 tabs">
-                <div><amp-img src="https://www.eurokidsindia.com/b2c/images/awards_accolades.jpg" width="327" height="221" alt="awards & accolades" title="awards & accolades"></amp-img></div>
+                <amp-img src="https://www.eurokidsindia.com/b2c/images/awards_accolades.jpg" layout='responsive' width=327 height=221 alt="awards & accolades" title="awards & accolades"></amp-img>
             </div>
             <div class="col-md-4 tabs">
                 <ul style="margin: 20px 0 20px 0;" class="cls1">
@@ -1256,19 +1292,19 @@ footer {
         <div class="row">
             <div class="greens">
                 <div class="greens_img">
-                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/03.gif" width="85" height="45" layout="fixed" alt=""></amp-img>
+                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/03.gif" width=85 height=45 layout="fixed" alt=""></amp-img>
                 </div>
                 <div class="greens_img">
-                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/900.gif" width="85" height="45" alt=""></amp-img>
+                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/900.gif" width=85 height=45 alt=""></amp-img>
                 </div>
                 <div class="greens_img">
-                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/350.gif" width="85" height="45" alt=""></amp-img>
+                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/350.gif" width=85 height=45 alt=""></amp-img>
                 </div>
                 <div class="greens_img">
-                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/15.gif" width="85" height="45" alt=""></amp-img>
+                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/15.gif" width=85 height=45 alt=""></amp-img>
                 </div>
                 <div class="greens_img">
-                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/300000.gif" width="85" height="45" alt="" style="border:none;" class="lak"></amp-img>
+                    <amp-img layout"responsive" src="https://www.eurokidsindia.com/b2c/images/green/300000.gif" width=85 height=45 alt="" class="lak"></amp-img>
                 </div>
             </div>
         </div>
