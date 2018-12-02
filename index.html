@@ -816,19 +816,22 @@ footer {
 
 .greens {
 	width: 100%;
-	text-align: center
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .greens img {
 	padding: 20px 10px;
 	height: 85px;
-	text-align: center
+	text-align: center;
 }
 
 .greens_img {
 	border-right: 1px solid #fff;
 	display: inline-block;
-    padding: 0 40px;
+    padding: 0 35px;
 }
 
 .pdng1 {
@@ -1069,35 +1072,7 @@ p {margin: 0 0 10px;}
     line-height: 20px;
     margin: 0;
 }
-@media (max-width: 767px) {
-    .container.second_paragraph p { padding: 0;}
-    .tabs {
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
-    }
 
-    .col-md-4.tabs ul { padding-left: 15px; }
-    .col-md-4.tabs:first-child { margin-right: 0; }
-
-    .euroKids_program .col-md-3 { width: 100%; height: 100px; }
-
-    .euroKids_advantages .col-md-4 { width: 100%; }
-
-    .greens_img { width: 100%; margin-bottom: 20px; }
-    
-    .row.awards_accolades { padding-top: 15px;}
-
-    .euroKids_advantages h2 { width: 100%; }
-
-	.container.second_paragraph p{
-		text-align: justify;
-		font-size: 14px;
-		line-height: 20px;
-		margin: 0;
-		padding: 0;
-	}
-}
 
 @media (min-width: 992px) {
     .col-md-4 {
@@ -1131,6 +1106,81 @@ p {margin: 0 0 10px;}
 .col-md-12.hdr-img {
 	max-width: 820px;
 	width: 100%
+}
+.greens_img.one {
+	max-width: 175px;
+	width: 100%;
+	height: 85px;
+	    display: flex;
+    align-items: center;
+}
+.greens_img.two {
+	max-width: 183px;
+	width: 100%;
+	height: 85px;
+	    display: flex;
+    align-items: center;
+}
+.greens_img.three {
+	max-width: 183px;
+	width: 100%;
+	height: 85px;
+	    display: flex;
+    align-items: center;
+}
+.greens_img.four {
+	max-width: 193px;
+	width: 100%;
+	height: 85px;
+	    display: flex;
+    align-items: center;
+}
+.greens_img.five {
+	max-width: 188px;
+	width: 100%;
+	height: 85px;
+	    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .container.second_paragraph p { padding: 0;}
+    .tabs {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .col-md-4.tabs ul { padding-left: 15px; }
+    .col-md-4.tabs:first-child { margin-right: 0; }
+
+    .euroKids_program .col-md-3 { width: 100%; height: 100px; }
+
+    .euroKids_advantages .col-md-4 { width: 100%; }
+
+    .greens_img { width: 100%; margin-bottom: 20px; }
+    
+    .row.awards_accolades { padding-top: 15px;}
+
+    .euroKids_advantages h2 { width: 100%; }
+
+	.container.second_paragraph p{
+		text-align: justify;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.greens { display: block; }
+
+	.greens_img.one,
+	.greens_img.two,
+	.greens_img.three,
+	.greens_img.four,
+	.greens_img.five {
+		display: block;
+		margin: 0 auto;
+	}
 }
 	</style>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
@@ -1341,19 +1391,19 @@ p {margin: 0 0 10px;}
         <br>
         <div class="row">
             <div class="greens">
-                <div class="greens_img">
+                <div class="greens_img one">
                     <amp-img src="https://www.eurokidsindia.com/b2c/images/green/03.gif" width=85 height=45 alt=""></amp-img>
                 </div>
-                <div class="greens_img">
+                <div class="greens_img two">
                     <amp-img src="https://www.eurokidsindia.com/b2c/images/green/900.gif" width=85 height=45 alt=""></amp-img>
                 </div>
-                <div class="greens_img">
+                <div class="greens_img three">
                     <amp-img src="https://www.eurokidsindia.com/b2c/images/green/350.gif" width=85 height=45 alt=""></amp-img>
                 </div>
-                <div class="greens_img">
+                <div class="greens_img four">
                     <amp-img src="https://www.eurokidsindia.com/b2c/images/green/15.gif" width=85 height=45 alt=""></amp-img>
                 </div>
-                <div class="greens_img">
+                <div class="greens_img five">
                     <amp-img src="https://www.eurokidsindia.com/b2c/images/green/300000.gif" width=85 height=45 alt="" class="lak"></amp-img>
                 </div>
             </div>
