@@ -166,6 +166,10 @@ input[type=radio][disabled] {
 		margin-bottom: 0;
 		vertical-align: middle
 	}
+
+	.col-md-4.tabs ul {
+		padding-left: 15px;
+	}
 }
 
 .btn {
@@ -1236,6 +1240,16 @@ and (orientation : landscape) {
 		max-width: 290px;
 		width: 100%;
 		margin-right: 20px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.col-md-4.tabs:first-child {
+		max-width: 600px;
+		width: 100%;
 	}
 }
 	</style>
