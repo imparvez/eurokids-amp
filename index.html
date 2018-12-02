@@ -888,19 +888,6 @@ footer {
 	}
 }
 
-@media screen and (max-width:900px) {
-	.greens_img {
-        border-right: none;
-        max-width: 100%;
-	}
-	.euroKids_advantages_img img {
-		width: initial
-    }
-    
-    .euroKids_advantages {
-        margin-bottom: 20px;
-    }
-}
 
 @media screen and (max-width:440px) {
 	.euroKids_advantages_img img {
@@ -970,10 +957,7 @@ footer {
 		border-bottom: 1px solid #fff;
 		padding: 20px 10px
 	}
-	.greens {
-		width: 100%;
-		margin: 0
-	}
+	
 	.pdng1 {
 		display: block
 	}
@@ -994,6 +978,28 @@ footer {
 		line-height: 18px
 	}
 }
+
+@media screen and (max-width:900px) {
+	.greens_img { 
+		display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+	}
+	.greens_img.one amp-img{ width: 177px;}
+	.greens_img.two amp-img{ width: 184px;}
+	.greens_img.three amp-img{ width: 184px;}
+	.greens_img.four amp-img{ width: 220px;}
+	.greens_img.five amp-img{ width: 314px;}
+	.greens_img.five { border: none;}
+	.euroKids_advantages_img img {
+		width: initial
+    }
+    
+    .euroKids_advantages {
+        margin-bottom: 20px;
+    }
+}
+
 
 .euroKids_advantages .col-md-4 {
 	width: 33.33333%;
@@ -1209,7 +1215,22 @@ p {margin: 0 0 10px;}
 		padding: 0;
 	}
 
-	.greens { display: block; }
+	.greens {
+		display: block;
+		width: 100%;
+	}
+
+	.greens_img { 
+		display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+	}
+	.greens_img.one amp-img{ width: 177px;}
+	.greens_img.two amp-img{ width: 184px;}
+	.greens_img.three amp-img{ width: 184px;}
+	.greens_img.four amp-img{ width: 220px;}
+	.greens_img.five amp-img{ width: 314px;}
+	.greens_img.five { border: none;}
 
 	.greens_img.one,
 	.greens_img.two,
@@ -1217,7 +1238,10 @@ p {margin: 0 0 10px;}
 	.greens_img.four,
 	.greens_img.five {
 		display: block;
-		margin: 0 auto;
+    border-right: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    height: 65px;
 	}
 	
 	.home_icon {right: 0}
