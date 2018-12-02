@@ -594,7 +594,7 @@ header .logo {
 }
 
 .frm {
-	padding: 10px 20px;
+	padding: 10px 20px 16px 20px;
 	position: absolute;
 	width: 90%;
 	margin-top: -350px;
@@ -645,7 +645,8 @@ label {
 	width: 50%;
 	text-align: center;
 	font-weight: 400;
-	color: #a6ce39
+	color: #a6ce39;
+	font-size: 30px;
 }
 
 .euroKids_advantages p {
@@ -708,11 +709,12 @@ label {
 
 .centertxt {
 	text-align: center;
-	margin-top: 10px
+	margin-top: 10px;
 }
 
 .centertxt a {
-	color: #fff
+	color: #fff;
+	text-decoration: none;
 }
 
 .btn-pr {
@@ -739,7 +741,8 @@ label {
 	width: 90%;
 	height: auto;
 	margin: 0 auto;
-	padding: 2px 0
+	padding: 2px 0;
+	display: none;
 }
 
 .rline img {
@@ -792,7 +795,9 @@ label {
 	list-style-type: none;
 	line-height: 26px;
 	text-align: justify;
-	color: #ed1846
+	color: #ed1846;
+	line-height: 26px;
+    font-size: 14px;
 }
 
 .icn {
@@ -999,19 +1004,19 @@ footer {
 
 @media (min-width:768px) {
 	.container {
-		width: 750px
+		width: 750px;
 	}
 }
 
 @media (min-width:992px) {
 	.container {
-		width: 970px
+		width: 970px;
 	}
 }
 
 @media (min-width:1200px) {
 	.container {
-		width: 1170px
+		width: 1170px;
 	}
 }
 
@@ -1019,6 +1024,14 @@ footer {
     .col-md-8 {
         width: 66.66666667%;
     }
+}
+.h1, .h2, .h3, h1, h2, h3 {margin-top: 20px;margin-bottom: 10px;}
+p {margin: 0 0 10px;}
+.col-md-8.pdng1 h3{font-weight: 500;}
+.col-md-8.pdng1 p {
+	text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .col-md-8.pdng h3 {
@@ -1033,8 +1046,28 @@ footer {
     line-height: 20px;
 }
 
-.col-md-4.tabs:first-child { margin-right: 15px; }
+.col-md-8.pdng h3 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 26.4px;
+}
 
+.col-md-8.pdng p {
+	text-align:justify;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;line-height: 20px;font-size: 14px; font-weight: 400;
+}
+
+.col-md-4.tabs:first-child { margin-right: 28px; margin-top: 28px;}
+.col-md-4.tabs:first-child amp-img { border-radius: 20px;}
+.row.euroKids_program {
+	margin-right: -15px;
+    margin-left: -15px;
+}
+.container.second_paragraph p{
+	text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
 @media (max-width: 767px) {
     .container.second_paragraph p { padding: 0;}
     .tabs {
@@ -1055,6 +1088,14 @@ footer {
     .row.awards_accolades { padding-top: 15px;}
 
     .euroKids_advantages h2 { width: 100%; }
+
+	.container.second_paragraph p{
+		text-align: justify;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 @media (min-width: 992px) {
@@ -1103,7 +1144,7 @@ footer {
         <div class="col-md-8 pdng">
             <h3>Pre-School for your child</h3>
             <article>
-                <p style="text-align:justify;">At EuroKids, our endeavour is to provide your child a comfortable atmosphere where learning is full of fun. The Pre-School is your child’s first experience away from you and it’s a huge leap for you as a parent. Hence, we ensure a safe,
+                <p style="text-align:justify; ">At EuroKids, our endeavour is to provide your child a comfortable atmosphere where learning is full of fun. The Pre-School is your child’s first experience away from you and it’s a huge leap for you as a parent. Hence, we ensure a safe,
                     hygienic and engaging environment for your child. Learning at EuroKids happens through experience and reflection on doing, the integrated use of scientifically designed games, toys and technology makes learning a lot more fun and engaging.</p>
             </article>
         </div>
